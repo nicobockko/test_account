@@ -1,5 +1,5 @@
 class Account:
-    def __init__(self):
-        self._balance = 10000
+    def __init__(self,balance):
+        self._balance = balance
 
     pass
