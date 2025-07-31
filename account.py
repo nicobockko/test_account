@@ -4,3 +4,6 @@ class Account:
 
     def deposit(self, money):
         self._balance += money
+
+    def withraw(self, money):
+        self._balance -= money

@@ -9,7 +9,11 @@ def test_account_init_10000_won():
     assert acc._balance == 10000
 
 
-def test_deposit_and_comfirm():
+def test_deposit_and_confirm():
     acc = Account(10000)
     acc.deposit(500)
     assert acc._balance == 10500
+def test_withraw_and_confirm():
+    acc = Account(10000)
+    acc.withraw(600)
+    assert acc._balance == 9600
