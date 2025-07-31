@@ -1,5 +1,10 @@
 from account import Account
 
 def test_create_account():
-    sut = Account()
-    assert sut is not None
+    acc = Account()
+    assert acc is not None
+
+def test_account_init_10000_won():
+    acc = Account()
+    ret = acc._balance
+    assert ret == 10000
