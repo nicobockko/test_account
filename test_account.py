@@ -6,5 +6,10 @@ def test_create_account():
 
 def test_account_init_10000_won():
     acc = Account(10000)
-    ret = acc._balance
-    assert ret == 10000
+    assert acc._balance == 10000
+
+
+def test_deposit_and_comfirm():
+    acc = Account(10000)
+    acc.deposit(500)
+    assert acc._balance == 10500
